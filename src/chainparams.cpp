@@ -109,9 +109,9 @@ public:
         nDefaultPort = 6987;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1487526785, 2084538879, 0x1f0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1487526785, 2084580194, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x544347e2dd6f8c758baf9552b36f8f8550b853caaa29260df206c6be5a58b15d"));
+        assert(consensus.hashGenesisBlock == uint256S("0xd10f7cfbfb64c280f5fd2e8f0595d8b61688cea6d6314c2345e99d8725c3028a"));
         assert(genesis.hashMerkleRoot == uint256S("0x4f67b77e0a5e9a263a6b6609ff1f64342ab192f1c65b2579fa909a78965de7df"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
@@ -193,8 +193,6 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1483228800; // January 1, 2017
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
-        // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000000000872d04d7");
 
         pchMessageStart[0] = 0xfd;
         pchMessageStart[1] = 0xd2;
@@ -203,9 +201,9 @@ public:
         nDefaultPort = 19335;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1487526785, 302510, 0x1f0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1487526785, 387711872, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xb8bfacc7462599d74fcc09f58099a64d0718b3312046783535424c30101fca81"));
+        assert(consensus.hashGenesisBlock == uint256S("0xc02310e5a7580b65268759c6807e87d3cd894d9bc6011b9fdacd40143f4f2f22"));
         assert(genesis.hashMerkleRoot == uint256S("0x4f67b77e0a5e9a263a6b6609ff1f64342ab192f1c65b2579fa909a78965de7df"));
 
         vFixedSeeds.clear();
